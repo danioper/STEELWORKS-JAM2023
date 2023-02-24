@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -10,6 +11,12 @@ public class CardLogic : MonoBehaviour
     public GameObject LeftChoice;
 
     private Vector2 pos;
+    private Sprite cardSprite;
+
+    public void Start()
+    {
+        cardSprite = GetComponent<Sprite>();
+    }
 
     public void OnMouseDrag(BaseEventData data)
     {
@@ -22,42 +29,39 @@ public class CardLogic : MonoBehaviour
             out pos);
         pos = new Vector2(pos.x, -199);
         transform.position = canvas.transform.TransformPoint(pos);
-        // Debug.Log(pos);
+        Debug.Log(pos);
     }
 
-    public void OnMouseEndDrag(BaseEventData data)
+    public void OnMouseEndDrag()
     {
         // Debug.Log("End drag!");
         transform.position = canvas.transform.TransformPoint(new Vector2(0, -199));
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void LoadNext(Sprite sprite, 
+        TextMeshPro desc,
+        TextMeshPro leftChoice,
+        TextMeshPro rightChoice)
     {
-        // Debug.Log("collision");
-        if(collision.gameObject.name == "LeftChoiceTrigger")
-        {
-            LeftChoice.SetActive(true);
-        }
-
-        if (collision.gameObject.name == "RightChoiceTrigger")
-        {
-            RightChoice.SetActive(true);
-        }
-
+        cardSprite = sprite;
     }
 
-    public void OnTriggerExit2D(Collider2D collision)
+    public void Update()
     {
-        // Debug.Log("collision");
-        if (collision.gameObject.name == "LeftChoiceTrigger")
+        if(pos.x < -400f)
+        {
+            LeftChoice.SetActive(true);
+        } else
         {
             LeftChoice.SetActive(false);
         }
 
-        if (collision.gameObject.name == "RightChoiceTrigger")
+        if(pos.x > 400f)
+        {
+            RightChoice.SetActive(true);
+        } else
         {
             RightChoice.SetActive(false);
         }
-
     }
 }
