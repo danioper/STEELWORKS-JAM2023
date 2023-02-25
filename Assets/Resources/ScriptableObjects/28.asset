@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
-  m_Name: 7
+  m_Name: 28
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  description: 'You receive a message in the morning: "Good morning. I like your
-    company very much and would like to invest a lot of money in it. In return, I
-    hope that my cousin will stay employed with you in your company."'
-  leftChoice: I am not bribed.
-  rightChoice: I like this offer.
-  leftStats: 000000000000000000000000fbffffff00000000
-  rightStats: 0000000000000000000000000a0000000a000000
+  cardSprite: {fileID: 21300000, guid: 7b3f4687ec12a8c4089af28060fcc976, type: 3}
+  description: Chip Jennings has come to you with a plan for a new product engine,
+    but before he gets started he wants to gather feedback from the community.
+  leftChoice: Let's keep it a secret
+  rightChoice: Right
+  leftStats: 0a0000000000000000000000fbffffff00000000
+  rightStats: 0000000000000000000000000500000000000000
   leftComments:
   - 
   - 

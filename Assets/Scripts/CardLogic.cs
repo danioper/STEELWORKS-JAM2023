@@ -12,6 +12,7 @@ public class CardLogic : MonoBehaviour
     public GameObject RightChoice;
     public GameObject LeftChoice;
     public int CardsCount;
+    public int Stress;
 
     public Image ImageSlot;
     public TextMeshProUGUI DescSlot;
@@ -23,11 +24,14 @@ public class CardLogic : MonoBehaviour
     public Slider AccSlider;
     public Slider MarkSlider;
 
+    public SpriteRenderer StressSprite;
+
     // Between 0 and 100
     public int[] Stats = new int[4] { 50, 50, 50, 50 };
 
     private Vector2 pos;
     private List<int> availableNums = new List<int>();
+
 
     public void OnMouseDrag(BaseEventData data)
     {
@@ -55,6 +59,7 @@ public class CardLogic : MonoBehaviour
             if (pos.x < -500f) UpdateStatsDisplay(UpdateStatsLeft(CardData));
             if (pos.x > 500f) UpdateStatsDisplay(UpdateStatsRight(CardData));
 
+            UpdateStressDisplay(UpdateStress());
             LoadCardData(CardData);
         }
     }
@@ -116,15 +121,63 @@ public class CardLogic : MonoBehaviour
         MarkSlider.value = Stats[3];
     }
 
+    public int UpdateStress()
+    {
+        bool isStressUpdated = false;
+        for(int i = 0; i < Stats.Length; i++)
+        {
+            if (Stats[i] <= 20 && !isStressUpdated )
+            {
+                Stress += 20;
+                isStressUpdated = true;
+                Debug.Log("Stress updated");
+            }
+        }
+        return Stress;
+    }
+
+    public void UpdateStressDisplay(int stress)
+    {
+        Sprite newSprite;
+        switch(stress)
+        {
+            case 40:
+                newSprite = Resources.Load("/StressSprites/pasek_40_stres") as Sprite;
+                StressSprite.sprite = newSprite;
+                break;
+
+            case 60:
+                newSprite = Resources.Load("/StressSprites/pasek_60_stres") as Sprite;
+                StressSprite.sprite = newSprite;
+                break;
+
+            case 80:
+                newSprite = Resources.Load("/StressSprites/pasek_80_stres") as Sprite;
+                StressSprite.sprite = newSprite;
+                break;
+
+            case 100:
+                newSprite = Resources.Load("/StressSprites/pasek_100_stres") as Sprite;
+                StressSprite.sprite = newSprite;
+                break;
+
+            default:
+                newSprite = Resources.Load("/StressSprites/pasek_20_stres") as Sprite;
+                StressSprite.sprite = newSprite;
+                break;
+        }
+    }
+
     public void Start()
     {
         // Debug.Log(ImageSlot.name);
-        // Debug.Log("Start!");
-        // GetCardData;
+        // Debug.Log("Start");
         for (int i = 0; i < CardsCount; i++)
         {
             availableNums.Add(i);
         }
+
+        Stress = 20;
 
         //for (int i = 0; i < CardsCount; i++)
         //{
@@ -136,6 +189,13 @@ public class CardLogic : MonoBehaviour
         {
             Stats[i] = 50;
         }
+        UpdateStatsDisplay(Stats);
+        
+        Debug.Log("Stress:" + Stress);
+        Sprite newSprite;
+        newSprite = Resources.Load("StressSprites/pasek_20_stres") as Sprite;
+        Debug.Log(newSprite.name);
+        StressSprite.sprite = newSprite;
     }
 
     public void Update()
