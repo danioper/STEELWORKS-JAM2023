@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
-  m_Name: 18
+  m_Name: 17
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 21300000, guid: ff67b96c6bd4aae49b1144fc942dbb04, type: 3}
-  description: Dear Leader, the problem has been diagnosed, our spy attack on UniSoft
-    has been discovered and the information has been released to the media
-  leftChoice: Let's keep it quiet
-  rightChoice: hush up the media
-  leftStats: 000000000000000000000000e2ffffff00000000
-  rightStats: 0000000000000000000000000a000000e2ffffff
+  cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
+  description: Your review of finances is interrupted by Eve Batty along with Coil
+    Optekar. They are arguing about an issue you completely don't understand from
+    either side.
+  leftChoice: Show Eve
+  rightChoice: Show Coil
+  leftStats: 0000000000000000ecffffff0000000000000000
+  rightStats: 00000000ecffffff000000000000000000000000
   leftComments:
   - 
   - 

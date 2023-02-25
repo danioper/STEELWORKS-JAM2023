@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  description: 
-  leftChoice: 
-  rightChoice: 
-  leftStats: 00000000000000000000000000000000
-  rightStats: 00000000000000000000000000000000
+  cardSprite: {fileID: 21300000, guid: ff67b96c6bd4aae49b1144fc942dbb04, type: 3}
+  description: Chairman, there was an explosion at one of our factories. We need
+    to provide workers' compensation and a place to sleep so that people will continue
+    to think well of us
+  leftChoice: We can't do anything.
+  rightChoice: We need to help them
+  leftStats: 0000000000000000000000000a000000f6ffffff
+  rightStats: 000000000000000000000000f6ffffff00000000
   leftComments:
   - 
   - 

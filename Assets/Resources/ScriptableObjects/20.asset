@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 20
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
+  cardSprite: {fileID: 21300000, guid: 7b3f4687ec12a8c4089af28060fcc976, type: 3}
   description: Boss, people are upset that we only have one toilet and one shower
     in the whole office, Could we invest in getting new ones ?
   leftChoice: I don't have the time or budget for it, you have the bushes

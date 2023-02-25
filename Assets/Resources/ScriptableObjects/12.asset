@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 12
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  description: 
-  leftChoice: 
-  rightChoice: 
-  leftStats: 00000000000000000000000000000000
-  rightStats: 00000000000000000000000000000000
+  cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
+  description: Mr. Leader, our new IT trainee has damaged a drive in the server room
+    please replace this drive
+  leftChoice: We don't have budget
+  rightChoice: No problem
+  leftStats: f6fffffff6ffffff000000000000000000000000
+  rightStats: 000000000a0000000000000000000000f6ffffff
   leftComments:
   - 
   - 
