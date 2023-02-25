@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: 15
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: 7b3f4687ec12a8c4089af28060fcc976, type: 3}
-  description: 'Jacob Goggleye returned to the office: "I know why those in IT wanted
-    to make platformers. The music in the office is playing inappropriate. It is
-    to be changed."'
-  leftChoice: Who ask?
+  description: I know why those in IT wanted to make platformers. The music in the
+    office is playing inappropriate. It is to be changed
+  leftChoice: We can't do that
   rightChoice: Of course
   leftStats: 00000000f6ffffff000000000000000000000000
   rightStats: 000000000a000000000000000000000000000000
