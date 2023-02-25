@@ -16,8 +16,8 @@ MonoBehaviour:
   description: HR Dept. pisses me off.
   leftChoice: Me too
   rightChoice: Deal with it
-  leftStats: 0a0000000a0000000a00000014000000
-  rightStats: f6fffffff6fffffff6ffffffecffffff
+  leftStats: 0a0000000a0000000a0000001400000014000000
+  rightStats: f6fffffff6fffffff6ffffffecffffffecffffff
   leftComments:
   - 
   - 
