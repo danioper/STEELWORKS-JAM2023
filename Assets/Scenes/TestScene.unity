@@ -344,7 +344,8 @@ MonoBehaviour:
   AccSlider: {fileID: 1351579455}
   MarkSlider: {fileID: 758868769}
   StressSprite: {fileID: 821338103}
-  Stats: 00000000000000000000000000000000
+  CashSprite: {fileID: 1158576278}
+  Stats: 0000000000000000000000000000000000000000
 --- !u!1 &293669282
 GameObject:
   m_ObjectHideFlags: 0
