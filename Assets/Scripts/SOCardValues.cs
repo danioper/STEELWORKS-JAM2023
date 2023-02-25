@@ -14,4 +14,7 @@ public class SOCardValues : ScriptableObject
     // IT, HR, Acc, Marketing
     public int[] leftStats = new int[4];
     public int[] rightStats = new int[4];
+
+    public string[] leftComments = new string[4];
+    public string[] rightComments= new string[4];
 }

@@ -22,12 +22,10 @@ public class CardLogic : MonoBehaviour
     public TextMeshProUGUI StatTextMarketing;
 
     // Between 0 and 100
-    public int IT = 50;
-    public int HR = 50;
-    public int Acc = 50;
-    public int Marketing = 50;
+    public int[] Stats = new int[4] { 50, 50, 50, 50 };
 
     private Vector2 pos;
+    private int[] availableNums = new int[3];
 
     public void OnMouseDrag(BaseEventData data)
     {
@@ -38,7 +36,7 @@ public class CardLogic : MonoBehaviour
             pointerData.position,
             canvas.worldCamera,
             out pos);
-        pos = new Vector2(pos.x, -199);
+        pos = new Vector2(pos.x, -185);
         transform.position = canvas.transform.TransformPoint(pos);
         Debug.Log(pos);
     }
@@ -46,7 +44,7 @@ public class CardLogic : MonoBehaviour
     public void OnMouseEndDrag()
     {
         // Debug.Log("End drag!");
-        transform.position = canvas.transform.TransformPoint(new Vector2(0, -199));
+        transform.position = canvas.transform.TransformPoint(new Vector2(0, -185));
 
         if (pos.x < -500f || pos.x > 500f)
         {
@@ -82,22 +80,20 @@ public class CardLogic : MonoBehaviour
 
     public int[] UpdateStatsLeft(SOCardValues CardValues)
     {
-        IT += CardValues.leftStats[0];
-        HR += CardValues.leftStats[1];
-        Acc += CardValues.leftStats[2];
-        Marketing += CardValues.leftStats[3];
-
-        return new int[] {IT, HR, Acc, Marketing};
+        for (int i = 0; i < Stats.Length; i++) {
+           Stats[i] += CardValues.leftStats[i];
+            Debug.Log("Stats" + i + " " + Stats[i]);
+        }
+        return Stats;
     }
 
     public int[] UpdateStatsRight(SOCardValues CardValues)
     {
-        IT += CardValues.rightStats[0];
-        HR += CardValues.rightStats[1];
-        Acc += CardValues.rightStats[2];
-        Marketing += CardValues.rightStats[3];
-
-        return new int[] { IT, HR, Acc, Marketing };
+        for (int i = 0; i < Stats.Length; i++)
+        {
+            Stats[i] += CardValues.rightStats[i];
+        }
+        return Stats;
     }
 
     public void UpdateStatsDisplay(int[] stats)
@@ -114,6 +110,15 @@ public class CardLogic : MonoBehaviour
         // Debug.Log("Start!");
         // GetCardData();
         LoadCardData(GetCardData());
+        for(int i = 0; i < Stats.Length; i++)
+        {
+            Stats[i] = 50;
+        }
+
+        for(int i = 0; i < 3; i++)
+        {
+            availableNums[i] = i;
+        }
     }
 
     public void Update()

@@ -85,6 +85,165 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2729200008853092734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5904027433384926604}
+  - component: {fileID: 5968171226487440049}
+  - component: {fileID: 1643924414}
+  - component: {fileID: 1643924415}
+  m_Layer: 0
+  m_Name: FaceFrame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5904027433384926604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729200008853092734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10, y: -135, z: 0}
+  m_LocalScale: {x: 128.6445, y: 128.6445, z: 128.6445}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7325793690995771183}
+  m_Father: {fileID: 3470303601658636099}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &5968171226487440049
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729200008853092734}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: aee971331cdcea04485da9cbb7d052a1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.78, y: 5.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1643924414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729200008853092734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1643924415}
+          m_TargetAssemblyTypeName: CardLogic, Assembly-CSharp
+          m_MethodName: OnMouseDrag
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1643924415}
+          m_TargetAssemblyTypeName: CardLogic, Assembly-CSharp
+          m_MethodName: OnMouseEndDrag
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1643924415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729200008853092734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73bf79fa35148a4ea9c94401d7aba5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  RightChoice: {fileID: 8264697556647284566}
+  LeftChoice: {fileID: 1560056752388083431}
+  ImageSlot: {fileID: 7325793690995771182}
+  DescSlot: {fileID: 7325793690039611477}
+  LeftChoiceSlot: {fileID: 8570152338255120280}
+  RightChoiceSlot: {fileID: 7325793690594437053}
+  StatTextIT: {fileID: 0}
+  StatTextHR: {fileID: 0}
+  StatTextAcc: {fileID: 0}
+  StatTextMarketing: {fileID: 0}
+  IT: 50
+  HR: 50
+  Acc: 50
+  Marketing: 50
 --- !u!1 &3857120429486590630
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,10 +269,10 @@ RectTransform:
   m_GameObject: {fileID: 3857120429486590630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73484, y: 0.73484, z: 0.73484}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7325793690995771183}
+  - {fileID: 5904027433384926604}
   - {fileID: 7325793690039611482}
   - {fileID: 7325793691205135367}
   m_Father: {fileID: 0}
@@ -594,9 +753,7 @@ GameObject:
   - component: {fileID: 7325793690995771183}
   - component: {fileID: 7325793690995771177}
   - component: {fileID: 7325793690995771182}
-  - component: {fileID: 7325793690995771179}
   - component: {fileID: 7325793690995771178}
-  - component: {fileID: 4934431873850933921}
   m_Layer: 5
   m_Name: CardImage
   m_TagString: Untagged
@@ -613,15 +770,15 @@ RectTransform:
   m_GameObject: {fileID: 7325793690995771180}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.0077733602, y: 0.0077733602, z: 0.0077733602}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3470303601658636099}
+  m_Father: {fileID: 5904027433384926604}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.091, y: -145}
+  m_AnchoredPosition: {x: -0.022613049, y: -0.07772827}
   m_SizeDelta: {x: 502.182, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7325793690995771177
@@ -662,51 +819,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7325793690995771179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7325793690995771180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 5
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4934431873850933921}
-          m_TargetAssemblyTypeName: CardLogic, Assembly-CSharp
-          m_MethodName: OnMouseDrag
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4934431873850933921}
-          m_TargetAssemblyTypeName: CardLogic, Assembly-CSharp
-          m_MethodName: OnMouseEndDrag
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!61 &7325793690995771178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -733,33 +845,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 227.72783, y: 261.82217}
   m_EdgeRadius: 0
---- !u!114 &4934431873850933921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7325793690995771180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73bf79fa35148a4ea9c94401d7aba5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  RightChoice: {fileID: 8264697556647284566}
-  LeftChoice: {fileID: 1560056752388083431}
-  ImageSlot: {fileID: 7325793690995771182}
-  DescSlot: {fileID: 7325793690039611477}
-  LeftChoiceSlot: {fileID: 8570152338255120280}
-  RightChoiceSlot: {fileID: 7325793690594437053}
-  StatTextIT: {fileID: 0}
-  StatTextHR: {fileID: 0}
-  StatTextAcc: {fileID: 0}
-  StatTextMarketing: {fileID: 0}
-  IT: 50
-  HR: 50
-  Acc: 50
-  Marketing: 50
 --- !u!1 &7325793691205135364
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,7 +870,7 @@ RectTransform:
   m_GameObject: {fileID: 7325793691205135364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0499998, y: 1, z: 1}
+  m_LocalScale: {x: 1.3562847, y: 1.2917, z: 1.2917}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 646573318626041088}
@@ -795,7 +880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -81}
+  m_AnchoredPosition: {x: -19.452, y: -81}
   m_SizeDelta: {x: 1246.5144, y: 599.1598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8264697556647284566
