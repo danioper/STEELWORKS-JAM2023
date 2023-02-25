@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 15
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  description: 
-  leftChoice: 
-  rightChoice: 
-  leftStats: 00000000000000000000000000000000
-  rightStats: 00000000000000000000000000000000
+  cardSprite: {fileID: 21300000, guid: 7b3f4687ec12a8c4089af28060fcc976, type: 3}
+  description: 'Jacob Goggleye returned to the office: "I know why those in IT wanted
+    to make platformers. The music in the office is playing inappropriate. It is
+    to be changed."'
+  leftChoice: Who ask?
+  rightChoice: Of course
+  leftStats: 00000000f6ffffff000000000000000000000000
+  rightStats: 0000000000000000000000000000000000000000
   leftComments:
   - 
   - 

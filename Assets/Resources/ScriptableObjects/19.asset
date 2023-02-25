@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 19
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  description: 
-  leftChoice: 
-  rightChoice: 
-  leftStats: 00000000000000000000000000000000
-  rightStats: 00000000000000000000000000000000
+  cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
+  description: 'They want to come to work, at the door of your office met Mike Socket:
+    "Boss, one person in the department has a birthday today, can we do a pizza order
+    and invite guests?'
+  leftChoice: Nope
+  rightChoice: Right
+  leftStats: 0000000000000000f6ffffff0000000000000000
+  rightStats: 0a000000f6ffffff0a0000000a000000f6ffffff
   leftComments:
   - 
   - 

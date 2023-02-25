@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: 7
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 0}
-  description: 
-  leftChoice: 
-  rightChoice: 
-  leftStats: 00000000000000000000000000000000
-  rightStats: 00000000000000000000000000000000
+  description: 'You receive a message in the morning: "Good morning. I like your
+    company very much and would like to invest a lot of money in it. In return, I
+    hope that my cousin will stay employed with you in your company."'
+  leftChoice: I am not bribed.
+  rightChoice: I like this offer.
+  leftStats: 0000000000000000000000000000000000000000
+  rightStats: 0000000000000000000000000a0000000a000000
   leftComments:
   - 
   - 

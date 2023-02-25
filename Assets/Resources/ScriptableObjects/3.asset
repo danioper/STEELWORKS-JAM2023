@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  description: 
-  leftChoice: 
-  rightChoice: 
-  leftStats: 00000000000000000000000000000000
-  rightStats: 00000000000000000000000000000000
+  cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
+  description: 'After some time Eve Batty comes: Good morning, I come to you from
+    Unisoft Art, I am to help you with the development of the accounting department.
+    Have you already signed all the terms of the contract with my employer?'
+  leftChoice: I have not received the terms of the contract please get back to me.
+  rightChoice: Yes everything is already filled I invite you to the 3rd floor.
+  leftStats: f6ffffff000000000a0000000000000000000000
+  rightStats: 0000000000000000e2ffffff0000000000000000
   leftComments:
   - 
   - 
