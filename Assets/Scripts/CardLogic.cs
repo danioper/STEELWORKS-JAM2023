@@ -9,6 +9,7 @@ public class CardLogic : MonoBehaviour
     public Canvas canvas;
     public GameObject RightChoice;
     public GameObject LeftChoice;
+    public ScriptableObject CardValues;
 
     private Vector2 pos;
     private Sprite cardSprite;
@@ -36,14 +37,6 @@ public class CardLogic : MonoBehaviour
     {
         // Debug.Log("End drag!");
         transform.position = canvas.transform.TransformPoint(new Vector2(0, -199));
-    }
-
-    public void LoadNext(Sprite sprite, 
-        TextMeshPro desc,
-        TextMeshPro leftChoice,
-        TextMeshPro rightChoice)
-    {
-        cardSprite = sprite;
     }
 
     public void Update()
