@@ -10,6 +10,7 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
 
     private int index;
+    public AudioSource pik;
     SceneChanger sceneChanger;
     // Start is called before the first frame update
     void Start()
@@ -48,6 +49,7 @@ public class Dialogue : MonoBehaviour
         {
             textComponent.text += line;
             yield return new WaitForSeconds(textSpeed);
+            pik.Play();
         }
     }
 

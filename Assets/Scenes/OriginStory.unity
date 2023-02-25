@@ -123,6 +123,135 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &469985906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469985908}
+  - component: {fileID: 469985907}
+  m_Layer: 0
+  m_Name: pik
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &469985907
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469985906}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -19706803598261288, guid: 1e4f7f95b116a254eb07ef2b7974f946,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 9afff71097c3c4c419610755e95216ab, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &469985908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469985906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1726317, y: -266.73798, z: 98.30533}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &591723848
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,36 +558,31 @@ MonoBehaviour:
   textComponent: {fileID: 610372253}
   lines:
   - '2150... 25 years out of life taken out for education. People before the invention
-    of advanced Cryonics would say that they spent a quarter of their entire lives
-    here. '
-  - 'But now, with access to professional medicine as much as I''d like to, I can''t
-    predict what part of my life I''ve spent on education.  '
-  - Quite funny that so many people, despite the possibility of a kind of immortality,
-    choose to die anyway
-  - I have always wondered what drives them....
-  - One often hears that the reason is pressure at work, an excess amount of stress.
-    However, many simply stop orienting themselves and lose the will to live.
-  - Maybe it's for the better, thanks to the fact that some people want to stop with
-    each other, we have not yet completely populated this planet.
-  - 'After graduation, companies that cooperate with the university pick up students
-    for their corporations, and it was no different with me. '
-  - My story, however, is somewhat different from others.
-  - I was sent to the university's new partner, PHC Corporation
-  - It's a shortcut of  Platformer Haterence Corp owned by Jacob Palutzkievitz
-  - An eccentric billionaire whose company develops software for human chronicle
-    machines.
-  - This corporation has somewhat strange rules about management
-  - Only one manager in charge of all departments
-  - Funny that every manager so far has helped stagnate the birth rate
-  - Some managed to last six months, others didn't even last a month.
-  - I worked for PHC for less than 2 months
-  - surprise was when I received my email congratulating me on my new position, I
-    remember its content very well.
-  - '"Sorry I forgot to say earlier that the next in line to management is you, congratulations".'
-  - That is, it is my turn...
-  - I will prove that it is possible to be a manager in this company and not support
-    the suicide report posts at the same time.
+    of advanced Cryonics would say they spent a quarter of their lives here. '
+  - The development of medicine has brought humanity to a point where no one has
+    to worry about it anymore
+  - However, this does not change the fact that many people, despite the possibility
+    of immortality, choose to die anyway
+  - I have always wondered what drives them...although thanks to them, we have not
+    yet completely populated this planet.
+  - After graduation, companies partnering with the university pick up students for
+    their corporations
+  - I ended up in a new partner of the university called PHC. It's sort of an acronym
+    for Platformer-Haterence-Corp owned by Jacob Palutzkievitz
+  - An eccentric billionaire whose company develops software machines for the human
+    chronicle.
+  - This corporation is distinguished by a strange approach to management, each department
+    here is managed by one manager who changes very often
+  - Some managed to last six months, others did not even last a month. Everyone ended
+    in the same way....
+  - I worked for PHC for less than 2 months. Surprise was when I received email congratulating
+    on my new position, I remember its content very well.
+  - '"Sorry I forgot to say earlier that the next in line to management is you, congratulations
+    ~ Palutzkievitz".'
+  - That is, it's my turn... I will prove that it is possible to be a manager in
+    this company and not support the suicide report posts at the same time.
   textSpeed: 0.01
+  pik: {fileID: 469985907}
 --- !u!1 &1173588470
 GameObject:
   m_ObjectHideFlags: 0
