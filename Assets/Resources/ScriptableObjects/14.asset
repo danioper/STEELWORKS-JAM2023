@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 14
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  description: 
-  leftChoice: 
-  rightChoice: 
-  leftStats: 00000000000000000000000000000000
-  rightStats: 00000000000000000000000000000000
+  cardSprite: {fileID: 21300000, guid: 771a8bdd15a66ef43a02fb2f0583905b, type: 3}
+  description: The IT department is not efficient! They seem to be doing some platform
+    game there! Let's turn off their electricity and teach them how to work!
+  leftChoice: Turn off the electricity
+  rightChoice: 'I don''t care '
+  leftStats: ecffffff140000000000000000000000
+  rightStats: 14000000ecffffff0000000000000000
   leftComments:
   - 
   - 
