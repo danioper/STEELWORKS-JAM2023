@@ -13,8 +13,19 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: bf7c57c8f25c1d94097cc393bf5cacd0, type: 3}
-  description: We have a problem, sir.
-  leftChoice: Yes
-  rightChoice: No
-  leftStats: 0a0000000a0000000a00000014000000
-  rightStats: f6fffffff6fffffff6ffffffecffffff
+  description: Hey chief, the accounting department dealt with the settlement of
+    accounts much faster than usual, we could use some increase
+  leftChoice: there is no option for an increase
+  rightChoice: well, sure !
+  leftStats: 00000000f6ffffff000000000000000000000000
+  rightStats: 000000000a0000000000000000000000f6ffffff
+  leftComments:
+  - 
+  - 
+  - 
+  - 
+  rightComments:
+  - 
+  - 
+  - 
+  - 
