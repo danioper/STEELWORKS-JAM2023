@@ -25,7 +25,7 @@ public class CardLogic : MonoBehaviour
     public int[] Stats = new int[4] { 50, 50, 50, 50 };
 
     private Vector2 pos;
-    private int[] availableNums = new int[3];
+    private List<int> availableNums = new List<int>();
 
     public void OnMouseDrag(BaseEventData data)
     {
@@ -59,7 +59,7 @@ public class CardLogic : MonoBehaviour
 
     public SOCardValues GetCardData()
     {
-        int cardNumber = Random.Range(1, 4);
+        int cardNumber = Random.Range(0, 3);
         string dir = "ScriptableObjects/" + cardNumber.ToString();
         return Resources.Load(dir) as SOCardValues;
     }
@@ -113,11 +113,6 @@ public class CardLogic : MonoBehaviour
         for(int i = 0; i < Stats.Length; i++)
         {
             Stats[i] = 50;
-        }
-
-        for(int i = 0; i < 3; i++)
-        {
-            availableNums[i] = i;
         }
     }
 
