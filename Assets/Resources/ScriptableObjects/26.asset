@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
-  m_Name: 7
+  m_Name: 26
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  description: 'You receive a message in the morning: "Good morning. I like your
-    company very much and would like to invest a lot of money in it. In return, I
-    hope that my cousin will stay employed with you in your company."'
-  leftChoice: I am not bribed.
-  rightChoice: I like this offer.
-  leftStats: 000000000000000000000000fbffffff00000000
-  rightStats: 0000000000000000000000000a0000000a000000
+  cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
+  description: 'Mike Socket texted you: "At the accounting office we put too much
+    paper in the printer. Unfortunately it was damaged and needs to be replaced.'
+  leftChoice: You messed up, fix it
+  rightChoice: Right
+  leftStats: 0000000000000000f6ffffff0000000000000000
+  rightStats: 0000000000000000000000000a000000fbffffff
   leftComments:
   - 
   - 

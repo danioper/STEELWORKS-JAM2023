@@ -19,7 +19,7 @@ MonoBehaviour:
   leftChoice: Who ask?
   rightChoice: Of course
   leftStats: 00000000f6ffffff000000000000000000000000
-  rightStats: 0000000000000000000000000000000000000000
+  rightStats: 000000000a000000000000000000000000000000
   leftComments:
   - 
   - 
