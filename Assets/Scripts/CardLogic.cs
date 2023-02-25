@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,16 +11,17 @@ public class CardLogic : MonoBehaviour
     public Canvas canvas;
     public GameObject RightChoice;
     public GameObject LeftChoice;
+    public int CardsCount;
 
     public Image ImageSlot;
     public TextMeshProUGUI DescSlot;
     public TextMeshProUGUI LeftChoiceSlot;
     public TextMeshProUGUI RightChoiceSlot;
 
-    public TextMeshProUGUI StatTextIT;
-    public TextMeshProUGUI StatTextHR;
-    public TextMeshProUGUI StatTextAcc;
-    public TextMeshProUGUI StatTextMarketing;
+    public Slider ITSlider;
+    public Slider HRSlider;
+    public Slider AccSlider;
+    public Slider MarkSlider;
 
     // Between 0 and 100
     public int[] Stats = new int[4] { 50, 50, 50, 50 };
@@ -38,7 +40,7 @@ public class CardLogic : MonoBehaviour
             out pos);
         pos = new Vector2(pos.x, -185);
         transform.position = canvas.transform.TransformPoint(pos);
-        Debug.Log(pos);
+        // Debug.Log(pos);
     }
 
     public void OnMouseEndDrag()
@@ -59,7 +61,17 @@ public class CardLogic : MonoBehaviour
 
     public SOCardValues GetCardData()
     {
-        int cardNumber = Random.Range(0, 3);
+        var rand = new System.Random();
+        int cardNumber = rand.Next(availableNums.Count);
+        availableNums.Remove(cardNumber);
+        // Debug.Log("Removed element: " + cardNumber);
+        // Debug.Log("List Count: " + availableNums.Count);
+
+        foreach(var card in availableNums)
+        {
+           // Debug.Log("Card: " + card);
+        }
+
         string dir = "ScriptableObjects/" + cardNumber.ToString();
         return Resources.Load(dir) as SOCardValues;
     }
@@ -82,7 +94,7 @@ public class CardLogic : MonoBehaviour
     {
         for (int i = 0; i < Stats.Length; i++) {
            Stats[i] += CardValues.leftStats[i];
-            Debug.Log("Stats" + i + " " + Stats[i]);
+            // Debug.Log("Stats" + i + " " + Stats[i]);
         }
         return Stats;
     }
@@ -91,26 +103,36 @@ public class CardLogic : MonoBehaviour
     {
         for (int i = 0; i < Stats.Length; i++)
         {
-            Stats[i] += CardValues.rightStats[i];
+            // Stats[i] += CardValues.rightStats[i];
         }
         return Stats;
     }
 
     public void UpdateStatsDisplay(int[] stats)
     {
-        StatTextIT.text = stats[0].ToString();
-        StatTextHR.text = stats[1].ToString();
-        StatTextAcc.text = stats[2].ToString();
-        StatTextMarketing.text = stats[3].ToString();
+        ITSlider.value = Stats[0];
+        HRSlider.value = Stats[1];
+        AccSlider.value = Stats[2];
+        MarkSlider.value = Stats[3];
     }
 
     public void Start()
     {
         // Debug.Log(ImageSlot.name);
         // Debug.Log("Start!");
-        // GetCardData();
+        // GetCardData;
+        for (int i = 0; i < CardsCount; i++)
+        {
+            availableNums.Add(i);
+        }
+
+        //for (int i = 0; i < CardsCount; i++)
+        //{
+        //    Debug.Log("List element: " + availableNums[i]);
+        //}
+
         LoadCardData(GetCardData());
-        for(int i = 0; i < Stats.Length; i++)
+        for (int i = 0; i < Stats.Length; i++)
         {
             Stats[i] = 50;
         }
