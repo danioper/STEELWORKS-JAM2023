@@ -16,7 +16,17 @@ public class CardLogic : MonoBehaviour
     public TextMeshProUGUI LeftChoiceSlot;
     public TextMeshProUGUI RightChoiceSlot;
 
-    
+    public TextMeshProUGUI StatTextIT;
+    public TextMeshProUGUI StatTextHR;
+    public TextMeshProUGUI StatTextAcc;
+    public TextMeshProUGUI StatTextMarketing;
+
+    // Between 0 and 100
+    public int IT = 50;
+    public int HR = 50;
+    public int Acc = 50;
+    public int Marketing = 50;
+
     private Vector2 pos;
 
     public void OnMouseDrag(BaseEventData data)
@@ -40,7 +50,12 @@ public class CardLogic : MonoBehaviour
 
         if (pos.x < -500f || pos.x > 500f)
         {
-            LoadCardData(GetCardData());
+            SOCardValues CardData = GetCardData();
+
+            if (pos.x < -500f) UpdateStatsDisplay(UpdateStatsLeft(CardData));
+            if (pos.x > 500f) UpdateStatsDisplay(UpdateStatsRight(CardData));
+
+            LoadCardData(CardData);
         }
     }
 
@@ -63,6 +78,34 @@ public class CardLogic : MonoBehaviour
         DescSlot.text = CardValues.description;
         LeftChoiceSlot.text = CardValues.leftChoice;
         RightChoiceSlot.text = CardValues.rightChoice;
+    }
+
+    public int[] UpdateStatsLeft(SOCardValues CardValues)
+    {
+        IT += CardValues.leftStats[0];
+        HR += CardValues.leftStats[1];
+        Acc += CardValues.leftStats[2];
+        Marketing += CardValues.leftStats[3];
+
+        return new int[] {IT, HR, Acc, Marketing};
+    }
+
+    public int[] UpdateStatsRight(SOCardValues CardValues)
+    {
+        IT += CardValues.rightStats[0];
+        HR += CardValues.rightStats[1];
+        Acc += CardValues.rightStats[2];
+        Marketing += CardValues.rightStats[3];
+
+        return new int[] { IT, HR, Acc, Marketing };
+    }
+
+    public void UpdateStatsDisplay(int[] stats)
+    {
+        StatTextIT.text = stats[0].ToString();
+        StatTextHR.text = stats[1].ToString();
+        StatTextAcc.text = stats[2].ToString();
+        StatTextMarketing.text = stats[3].ToString();
     }
 
     public void Start()

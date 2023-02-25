@@ -16,3 +16,5 @@ MonoBehaviour:
   description: Can I go home early?
   leftChoice: You're serious?
   rightChoice: Be my guest.
+  leftStats: 0a0000000a0000000a00000014000000
+  rightStats: f6fffffff6fffffff6ffffffecffffff
