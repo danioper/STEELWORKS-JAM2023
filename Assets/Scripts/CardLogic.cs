@@ -59,6 +59,7 @@ public class CardLogic : MonoBehaviour
             if (pos.x < -500f) UpdateStatsDisplay(UpdateStatsLeft(CardData));
             if (pos.x > 500f) UpdateStatsDisplay(UpdateStatsRight(CardData));
 
+            // UpdateStressDisplay(UpdateStress());
             UpdateStressDisplay(UpdateStress());
             LoadCardData(CardData);
         }
@@ -124,13 +125,13 @@ public class CardLogic : MonoBehaviour
     public int UpdateStress()
     {
         bool isStressUpdated = false;
-        for(int i = 0; i < Stats.Length; i++)
+        for (int i = 0; i < Stats.Length; i++)
         {
-            if (Stats[i] <= 20 && !isStressUpdated )
+            if (Stats[i] <= 20 && !isStressUpdated)
             {
                 Stress += 20;
                 isStressUpdated = true;
-                Debug.Log("Stress updated");
+                Debug.Log("Stress updated: " + Stress);
             }
         }
         return Stress;
@@ -139,33 +140,35 @@ public class CardLogic : MonoBehaviour
     public void UpdateStressDisplay(int stress)
     {
         Sprite newSprite;
-        switch(stress)
+        Debug.Log("Stress: " + stress);
+        switch (stress)
         {
+            case 20:
+                newSprite = Resources.Load("StressSprites/pasek_20_stres") as Sprite;
+                break;
+
             case 40:
-                newSprite = Resources.Load("/StressSprites/pasek_40_stres") as Sprite;
-                StressSprite.sprite = newSprite;
+                newSprite = Resources.Load("StressSprites/pasek_40_stres") as Sprite;
                 break;
 
             case 60:
-                newSprite = Resources.Load("/StressSprites/pasek_60_stres") as Sprite;
-                StressSprite.sprite = newSprite;
+                newSprite = Resources.Load("StressSprites/pasek_60_stres") as Sprite;
                 break;
 
             case 80:
-                newSprite = Resources.Load("/StressSprites/pasek_80_stres") as Sprite;
-                StressSprite.sprite = newSprite;
+                newSprite = Resources.Load("StressSprites/pasek_80_stres") as Sprite;
                 break;
 
             case 100:
-                newSprite = Resources.Load("/StressSprites/pasek_100_stres") as Sprite;
-                StressSprite.sprite = newSprite;
+                newSprite = Resources.Load("StressSprites/pasek_100_stres") as Sprite;
                 break;
 
             default:
-                newSprite = Resources.Load("/StressSprites/pasek_20_stres") as Sprite;
-                StressSprite.sprite = newSprite;
+                newSprite = Resources.Load("StressSprites/pasek_20_stres") as Sprite;
                 break;
         }
+        Debug.Log("Sprite name: " + newSprite.name);
+        StressSprite.sprite = newSprite;
     }
 
     public void Start()
@@ -191,11 +194,11 @@ public class CardLogic : MonoBehaviour
         }
         UpdateStatsDisplay(Stats);
         
-        Debug.Log("Stress:" + Stress);
-        Sprite newSprite;
-        newSprite = Resources.Load("StressSprites/pasek_20_stres") as Sprite;
-        Debug.Log(newSprite.name);
-        StressSprite.sprite = newSprite;
+        //Debug.Log("Stress:" + Stress);
+        //Sprite newSprite;
+        //newSprite = Resources.Load("StressSprites/pasek_20_stres") as Sprite;
+        //Debug.Log(newSprite.name);
+        //StressSprite.sprite = newSprite;
     }
 
     public void Update()
