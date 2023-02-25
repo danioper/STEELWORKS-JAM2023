@@ -23,8 +23,7 @@ public class GameLogic : MonoBehaviour
         Debug.Log("Start!");
         CardValues = ScriptableObject.CreateInstance<SOCardValues>();
         cardSprite = Card.transform.GetChild(0).gameObject.GetComponent<Sprite>();
-        cardSprite.S = CardValues.cardSprite;
-
+        //cardSprite.S = CardValues.cardSprite;
     }
 
     
