@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CardLogic : MonoBehaviour
 {
     public Canvas canvas;
     public GameObject RightChoice;
     public GameObject LeftChoice;
-    public ScriptableObject CardValues;
 
+    public Image ImageSlot;
+    public TextMeshProUGUI DescSlot;
+    public TextMeshProUGUI LeftChoiceSlot;
+    public TextMeshProUGUI RightChoiceSlot;
+
+    
     private Vector2 pos;
-    private Sprite cardSprite;
-
-    public void Start()
-    {
-        cardSprite = GetComponent<Sprite>();
-    }
 
     public void OnMouseDrag(BaseEventData data)
     {
@@ -37,6 +37,40 @@ public class CardLogic : MonoBehaviour
     {
         // Debug.Log("End drag!");
         transform.position = canvas.transform.TransformPoint(new Vector2(0, -199));
+
+        if (pos.x < -500f || pos.x > 500f)
+        {
+            LoadCardData(GetCardData());
+        }
+    }
+
+    public SOCardValues GetCardData()
+    {
+        int cardNumber = Random.Range(1, 4);
+        string dir = "ScriptableObjects/" + cardNumber.ToString();
+        return Resources.Load(dir) as SOCardValues;
+    }
+
+    public void LoadCardData(SOCardValues CardValues)
+    {
+        LeftChoice.SetActive(false);
+        RightChoice.SetActive(false);
+        if(CardValues == null)
+        {
+            Debug.Log("CardValues is null!");
+        }
+        ImageSlot.sprite = CardValues.cardSprite;
+        DescSlot.text = CardValues.description;
+        LeftChoiceSlot.text = CardValues.leftChoice;
+        RightChoiceSlot.text = CardValues.rightChoice;
+    }
+
+    public void Start()
+    {
+        // Debug.Log(ImageSlot.name);
+        // Debug.Log("Start!");
+        // GetCardData();
+        LoadCardData(GetCardData());
     }
 
     public void Update()
