@@ -10,4 +10,8 @@ public class SOCardValues : ScriptableObject
 {
     public Sprite cardSprite;
     public string description, leftChoice, rightChoice;
+
+    // IT, HR, Acc, Marketing
+    public int[] leftStats = new int[4];
+    public int[] rightStats = new int[4];
 }
