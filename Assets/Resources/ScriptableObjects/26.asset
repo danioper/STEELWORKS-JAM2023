@@ -18,14 +18,14 @@ MonoBehaviour:
   leftChoice: You messed up, fix it
   rightChoice: Right
   leftStats: 0000000000000000f6ffffff0000000000000000
-  rightStats: 0000000000000000000000000a000000fbffffff
+  rightStats: 00000000000000000a00000000000000fbffffff
   leftComments:
   - 
   - 
-  - 
+  - How do I print cute kitties?
   - 
   rightComments:
   - 
   - 
-  - 
+  - Yeah, a new printer!
   - 
