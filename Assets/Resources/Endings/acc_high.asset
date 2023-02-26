@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ad329f58ba3e44855fa62bacf5df3, type: 3}
   m_Name: acc_high
   m_EditorClassIdentifier: 
-  Description: 
+  Description: The out-of-control accountants took advantage of the holes in the
+    documents and seized a large part of the company's finances.   Your funds were
+    also acquired by them by which you lost all your assets.

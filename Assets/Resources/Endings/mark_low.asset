@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ad329f58ba3e44855fa62bacf5df3, type: 3}
   m_Name: mark_low
   m_EditorClassIdentifier: 
-  Description: 
+  Description: Because of the pouncing on marketig, customers knew little about the
+    company. In fact, they knew nothing at all, which the competition took advantage
+    of, and at some point everyone hated PHC.   To alleviate the affair you became
+    the scapegoat and the board fired you from the company.
