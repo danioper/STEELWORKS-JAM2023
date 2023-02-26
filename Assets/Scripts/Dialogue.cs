@@ -12,12 +12,17 @@ public class Dialogue : MonoBehaviour
     private int index;
     public AudioSource pik;
     SceneChanger sceneChanger;
+    Animator anim;
+
+    public SpriteRenderer spriteRenderer;
+    
     // Start is called before the first frame update
     void Start()
     {
         sceneChanger = GameObject.FindGameObjectWithTag("LevelLoader").GetComponent<SceneChanger>();
         textComponent.text = string.Empty;
         StartDialogue();
+        spriteRenderer.sprite = Resources.Load<Sprite>($"Narrative/{2}");
     }
 
     // Update is called once per frame
@@ -33,6 +38,21 @@ public class Dialogue : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
+            }
+
+            switch (index)
+            {
+                case 1:
+                    spriteRenderer.sprite = Resources.Load<Sprite>($"Narrative/{1}");
+                break;
+                case 6:
+                    spriteRenderer.sprite = Resources.Load<Sprite>($"Narrative/{3}");
+                break;
+                case 9:
+                    spriteRenderer.sprite = Resources.Load<Sprite>($"Narrative/{4}");
+                break;
+                default:
+                break;
             }
         }
     }
