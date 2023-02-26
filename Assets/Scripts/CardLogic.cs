@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ using UnityEngine.UI;
 
 public class CardLogic : MonoBehaviour
 {
+
     public Canvas canvas;
     public GameObject RightChoice;
     public GameObject LeftChoice;
@@ -41,6 +43,8 @@ public class CardLogic : MonoBehaviour
     private Vector2 pos;
     private List<int> availableNums = new List<int>();
 
+    private int cardNumber;
+
     public void OnMouseDrag(BaseEventData data)
     {
         PointerEventData pointerData = (PointerEventData)data;
@@ -62,28 +66,43 @@ public class CardLogic : MonoBehaviour
 
         if (pos.x < -500f || pos.x > 500f)
         {
+            SOCardValues OldCardData = GetCardData();
+            cardNumber = GetCardNumber();
             SOCardValues CardData = GetCardData();
 
-            if (pos.x < -500f) UpdateStatsDisplay(UpdateStatsLeft(CardData));
-            if (pos.x > 500f) UpdateStatsDisplay(UpdateStatsRight(CardData));
+            if (pos.x < -500f)
+            {
+                DisplayComs(GetLeftCommentsNumber(OldCardData), GetLeftComments(OldCardData));
+                UpdateStatsDisplay(UpdateStatsLeft(CardData));
+            }
+            if (pos.x > 500f)
+            {
+                DisplayComs(GetRightCommentsNumber(OldCardData), GetRightComments(OldCardData));
+                UpdateStatsDisplay(UpdateStatsRight(CardData));
+            }
 
             UpdateStressDisplay(UpdateStress());
             LoadCardData(CardData);
         }
     }
 
-    public SOCardValues GetCardData()
+    public int GetCardNumber()
     {
         var rand = new System.Random();
         int cardNumber = rand.Next(availableNums.Count);
         availableNums.Remove(cardNumber);
+        return cardNumber;
+    }
+
+    public SOCardValues GetCardData()
+    {
         // Debug.Log("Removed element: " + cardNumber);
         // Debug.Log("List Count: " + availableNums.Count);
 
-        foreach(var card in availableNums)
-        {
-           // Debug.Log("Card: " + card);
-        }
+        //foreach(var card in availableNums)
+        //{
+        //   // Debug.Log("Card: " + card);
+        //}
 
         string dir = "ScriptableObjects/" + cardNumber.ToString();
         return Resources.Load(dir) as SOCardValues;
@@ -103,18 +122,35 @@ public class CardLogic : MonoBehaviour
         RightChoiceSlot.text = CardValues.rightChoice;
     }
 
+    public int GetLeftCommentsNumber(SOCardValues CardValues)
+    {
+        return CardValues.leftComments.Length;
+    }
+
+    public int GetRightCommentsNumber(SOCardValues CardValues)
+    {
+        return CardValues.rightComments.Length;
+    }
+
+    public string[] GetLeftComments(SOCardValues CardValues)
+    {
+        return CardValues.leftComments;
+    }
+    public string[] GetRightComments(SOCardValues CardValues)
+    {
+        return CardValues.rightComments;
+    }
+
     public int[] UpdateStatsLeft(SOCardValues CardValues)
     {
         for (int i = 0; i < Stats.Length; i++) {
            Stats[i] += CardValues.leftStats[i];
             // Debug.Log("Stats" + i + " " + Stats[i]);
         }
-
-        int commentsNumber = CardValues.leftComments.Length;
         string[] comments = CardValues.leftComments;
 
-        DisplayComs(commentsNumber, comments);
-        StartCoroutine(WaitAndDestroyComs());
+        //DisplayComs(commentsNumber, comments);
+        //StartCoroutine(WaitAndDestroyComs());
         
 
         return Stats;
@@ -129,7 +165,9 @@ public class CardLogic : MonoBehaviour
 
         int commentsNumber = CardValues.rightComments.Length;
         string[] comments = CardValues.rightComments;
-        DisplayComs(commentsNumber, comments);
+        
+        //DisplayComs(commentsNumber, comments);
+        //StartCoroutine(WaitAndDestroyComs());
 
         return Stats;
     }
@@ -253,7 +291,7 @@ public class CardLogic : MonoBehaviour
         {
             availableNums.Add(i);
         }
-
+        cardNumber = GetCardNumber();
         Stress = 20;
 
         //for (int i = 0; i < CardsCount; i++)
