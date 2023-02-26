@@ -11,6 +11,7 @@ public class Dialogue : MonoBehaviour
 
     private int index;
     public AudioSource pik;
+    public GameObject animation;
     SceneChanger sceneChanger;
     Animator anim;
 
@@ -23,6 +24,7 @@ public class Dialogue : MonoBehaviour
         textComponent.text = string.Empty;
         StartDialogue();
         spriteRenderer.sprite = Resources.Load<Sprite>($"Narrative/{2}");
+        anim = animation.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -88,6 +90,7 @@ public class Dialogue : MonoBehaviour
         {
             gameObject.SetActive(false);
             sceneChanger.LoadNextLevel();
+            anim.Play("anim_end");
             //LoadNextLevel();
         }
     }

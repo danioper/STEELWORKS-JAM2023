@@ -506,6 +506,7 @@ MonoBehaviour:
     this company and not support the suicide report posts at the same time.
   textSpeed: 0.01
   pik: {fileID: 469985907}
+  animation: {fileID: 855634714}
   spriteRenderer: {fileID: 855634718}
 --- !u!1 &855634714
 GameObject:
