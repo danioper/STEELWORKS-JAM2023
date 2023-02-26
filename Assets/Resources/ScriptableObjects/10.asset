@@ -15,10 +15,10 @@ MonoBehaviour:
   cardSprite: {fileID: 21300000, guid: 7e3da80d004108a418f32954c0995996, type: 3}
   description: There was a fight in the company between a Marketing employee and
     an Accounting employee, Please punish either of them with disciplinary action
-  leftChoice: Accounting
+  leftChoice: Accouting
   rightChoice: Marketing
-  leftStats: 0000000000000000f6ffffff0a0000000a000000
-  rightStats: 00000000000000000a000000f6fffffff6ffffff
+  leftStats: 0000000000000000f6ffffff0000000000000000
+  rightStats: 000000000000000000000000f6ffffff00000000
   leftComments:
   - 
   - 
