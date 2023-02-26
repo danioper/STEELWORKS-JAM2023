@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
-  description: Here the employee's request displays
+  description: Swipe character card to end tutorial
   leftChoice: End the tutorial
   rightChoice: End the tutorial
   leftStats: 0000000000000000000000000000000000000000
