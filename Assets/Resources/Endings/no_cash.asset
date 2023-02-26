@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ad329f58ba3e44855fa62bacf5df3, type: 3}
   m_Name: no_cash
   m_EditorClassIdentifier: 
-  Description: 
+  Description: You spent the last of the company's money. Unfortunately, there wasn't
+    enough left to polish the next product, and PHC went bankrupt.  You were purchased
+    by the Love Platformers Company, and they set about producing a new platform
+    game.

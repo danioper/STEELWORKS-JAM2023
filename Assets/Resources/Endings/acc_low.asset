@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ad329f58ba3e44855fa62bacf5df3, type: 3}
   m_Name: acc_low
   m_EditorClassIdentifier: 
-  Description: 
+  Description: Due to accounting inaccuracies, the company failed to pay a significant
+    portion of taxes to you.  You became a scapegoat and were fired from your job
+    and the court sentenced you to years in prison.
