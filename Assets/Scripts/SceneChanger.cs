@@ -20,6 +20,14 @@ public class SceneChanger : MonoBehaviour
     {        
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
+    public void LoadPrevLevel()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex - 1));
+    }
+    public void LoadMenuLevel()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex - 4));
+    }
 
     IEnumerator LoadLevel(int levelIndex)
     {
