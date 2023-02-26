@@ -13,20 +13,20 @@ MonoBehaviour:
   m_Name: 16
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
-  description: Due to recent expenses we have a big shortfall in the budget. I have
-    an idea of what we can do, but it won't be entirely legal, for if we succeed,
-    we'll get a large stockpile of cash.
+  description: We have a big shortfall in the budget. I have an idea of what we can
+    do, but it won't be entirely legal, for if we succeed, we'll get a large stockpile
+    of cash.
   leftChoice: Let's try
   rightChoice: we don't want to do anything illegal
   leftStats: 00000000000000000a000000ecffffff28000000
   rightStats: 0000000000000000f6ffffff0000000000000000
   leftComments:
-  - 
+  - Money money money!
   - 
   - 
   - 
   rightComments:
   - 
   - 
-  - 
-  - 
+  - My dreams shattered
+  - What happened here?

@@ -17,10 +17,10 @@ MonoBehaviour:
     but before he gets started he wants to gather feedback from the community.
   leftChoice: Let's keep it a secret
   rightChoice: Right
-  leftStats: 0a0000000000000000000000fbffffff00000000
-  rightStats: 0000000000000000000000000500000000000000
+  leftStats: 0000000000000000000000000500000000000000
+  rightStats: 0a0000000000000000000000fbffffff00000000
   leftComments:
-  - 
+  - Eh... Free work
   - 
   - 
   - 
@@ -28,4 +28,4 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
+  - People didn't like it

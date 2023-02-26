@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: 21
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: f7d8b0126858a614e8414e07668a8bf9, type: 3}
-  description: Dom Deadmouse walked into the office. "The university I'm at doesn't
-    want to pay students for the metoring Jama is doing with the company. Can we
-    count on some funding?"
+  description: The university I'm at doesn't want to pay students for the metoring
+    Jama is doing with the company. Can we count on some funding?"
   leftChoice: These are not my employees
   rightChoice: The young need to be helped
   leftStats: 000000000000000000000000e2ffffff00000000
@@ -24,9 +23,9 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
+  - Students hate us.
   rightComments:
   - 
   - 
-  - 
-  - 
+  - And so they will go to the competition
+  - There will be new employees
