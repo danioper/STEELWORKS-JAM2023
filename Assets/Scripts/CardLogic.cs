@@ -45,6 +45,21 @@ public class CardLogic : MonoBehaviour
 
     private int cardNumber;
 
+    private string[] endings = new string[11]
+    {
+        "victory",
+        "stress",
+        "no_cash",
+        "IT_high",
+        "IT_low",
+        "HR_high",
+        "HR_low",
+        "acc_high",
+        "acc_low",
+        "mark_high",
+        "mark_low"
+    };
+
     public void OnMouseDrag(BaseEventData data)
     {
         PointerEventData pointerData = (PointerEventData)data;
@@ -73,12 +88,12 @@ public class CardLogic : MonoBehaviour
             if (pos.x < -500f)
             {
                 DisplayComs(GetLeftCommentsNumber(OldCardData), GetLeftComments(OldCardData));
-                UpdateStatsDisplay(UpdateStatsLeft(CardData));
+                UpdateStatsDisplay(UpdateStatsLeft(OldCardData));
             }
             if (pos.x > 500f)
             {
                 DisplayComs(GetRightCommentsNumber(OldCardData), GetRightComments(OldCardData));
-                UpdateStatsDisplay(UpdateStatsRight(CardData));
+                UpdateStatsDisplay(UpdateStatsRight(OldCardData));
             }
 
             UpdateStressDisplay(UpdateStress());
@@ -324,5 +339,11 @@ public class CardLogic : MonoBehaviour
         {
             RightChoice.SetActive(false);
         }
+    }
+
+    public void CheckEnding()
+    {
+        string end_name;
+
     }
 }
