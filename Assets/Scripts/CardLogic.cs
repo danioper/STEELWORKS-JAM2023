@@ -12,6 +12,7 @@ using UnityEngine.UI;
 
 public class CardLogic : MonoBehaviour
 {
+    public GameLogic gameManager;
 
     public Canvas canvas;
     public GameObject RightChoice;
@@ -97,7 +98,7 @@ public class CardLogic : MonoBehaviour
                 DisplayComs(GetRightCommentsNumber(OldCardData), GetRightComments(OldCardData));
                 UpdateStatsDisplay(UpdateStatsRight(OldCardData));
             }
-
+            CheckEnding();
             UpdateStressDisplay(UpdateStress());
             LoadCardData(CardData);
         }
@@ -306,6 +307,7 @@ public class CardLogic : MonoBehaviour
         // Debug.Log("Start");
 
         sceneChanger = GameObject.FindGameObjectWithTag("LevelLoader").GetComponent<SceneChanger>();
+        gameManager = GameObject.FindGameObjectWithTag("gameplayManager").GetComponent<GameLogic>();
 
         for (int i = 0; i < CardsCount; i++)
         {
@@ -349,14 +351,78 @@ public class CardLogic : MonoBehaviour
 
     public void CheckEnding()
     {
-        string end_name;
-
         if(Stress >= 100)
         {
-            end_name = endings[2];
+            gameManager.ending = "stress";
+            sceneChanger.LoadNextLevel();
+        }   
+
+        if (Stats[4] <= 0)
+        {
+            gameManager.ending = "no_cash";
+            sceneChanger.LoadNextLevel();
         }
 
-        // if (Stats[])
-        // sceneChanger.LoadNextLevel();
+        if (Stats[0] >= 100)
+        {
+            gameManager.ending = "IT_high";
+            sceneChanger.LoadNextLevel();
+        }
+
+        if (Stats[0] <= 0 )
+        {
+            gameManager.ending = "IT_low";
+            sceneChanger.LoadNextLevel();
+        }
+
+        if (Stats[1] >= 100)
+        {
+            gameManager.ending = "HR_high";
+            sceneChanger.LoadNextLevel();
+        }
+
+        if (Stats[1] <= 0)
+        {
+            gameManager.ending = "HR_low";
+            sceneChanger.LoadNextLevel();
+        }
+
+        if (Stats[2] >= 100)
+        {
+            gameManager.ending = "acc_high";
+            sceneChanger.LoadNextLevel();
+        }
+
+        if (Stats[2] <= 0)
+        {
+            gameManager.ending = "acc_low";
+            sceneChanger.LoadNextLevel();
+        }
+
+        if (Stats[3] >= 100)
+        {
+            gameManager.ending = "mark_high";
+            sceneChanger.LoadNextLevel();
+        }
+
+        if (Stats[3] <= 0)
+        {
+            gameManager.ending = "mark_low";
+            sceneChanger.LoadNextLevel();
+        }
+        Debug.Log("Ending: " + gameManager.ending);
+        
     }
+
+    //"victory",
+    //    "stress",
+    //    "no_cash",
+    //    "IT_high",
+    //    "IT_low",
+    //    "HR_high",
+    //    "HR_low",
+    //    "acc_high",
+    //    "acc_low",
+    //    "mark_high",
+    //    "mark_low"
 }
