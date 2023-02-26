@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Dear Leader, the problem has been diagnosed, our spy attack on UniSoft
     has been discovered and the information has been released to the media
   leftChoice: Let's keep it quiet
-  rightChoice: hush up the media
+  rightChoice: Hush up the media
   leftStats: 000000000000000000000000e2ffffff00000000
   rightStats: 0000000000000000000000000a000000e2ffffff
   leftComments:
