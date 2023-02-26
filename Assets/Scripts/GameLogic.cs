@@ -10,25 +10,31 @@ using UnityEngine.UI;
 
 public class GameLogic : MonoBehaviour
 {
-    public Canvas canvas;
-    public GameObject Card;
-    public SOCardValues CardValues;
+    public static GameLogic Instance;
 
-    //public Image ImageSlot;
-    //public TextMeshProUGUI DescSlot;
-    //public TextMeshProUGUI LeftChoiceSlot;
-    //public TextMeshProUGUI RightChoiceSlot;
+    public string ending;
 
 
-    // Start is called before the first frame update
-    //void Start()
-    //{
-    //    ImageSlot = GetComponent<Image>();
-    //    Debug.Log("Start!");
-    //    CardValues = ScriptableObject.CreateInstance<SOCardValues>();
-    //    ImageSlot.sprite = CardValues.cardSprite;
-    //    DescSlot.text = CardValues.description;
-    //}
+    private SOEndings endingRes;
 
-    
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        } else if (Instance != this) {
+            Destroy(gameObject);
+        }
+        
+    }
+
+    public void SaveEnding()
+    {
+        GameLogic.Instance.ending = ending;
+    }
+
+
+
+
 }

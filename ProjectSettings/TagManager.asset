@@ -8,6 +8,7 @@ TagManager:
   - Menu
   - CommentText
   - img
+  - gameplayManager
   layers:
   - Default
   - TransparentFX
