@@ -3393,7 +3393,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: To the left of the card is the company budget indicator, keeping it high
-    can help you deal with difficult decisions
+    can help you deal with difficult decisions.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43c5a78d75e274848a83721f0ecede05, type: 2}
   m_sharedMaterial: {fileID: -1008326204684946067, guid: 43c5a78d75e274848a83721f0ecede05,
@@ -4386,7 +4386,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Welcome to Another Leader. Game where your decisions will determine the
-    fate of the company
+    fate of the company.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43c5a78d75e274848a83721f0ecede05, type: 2}
   m_sharedMaterial: {fileID: -1008326204684946067, guid: 43c5a78d75e274848a83721f0ecede05,
@@ -5899,7 +5899,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: To the right of the card is the stress indicator. Stress can be caused
     by maintaining bad relations with various branches of the company. Try to control
-    this level
+    this level.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43c5a78d75e274848a83721f0ecede05, type: 2}
   m_sharedMaterial: {fileID: -1008326204684946067, guid: 43c5a78d75e274848a83721f0ecede05,
@@ -7208,8 +7208,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Your decisions will affect the fate of the company''s 4 main departments
-    including: "IT" "HR" "Accounting" and "Marketing." Don''t let individual indicators
-    fall too low'
+    including: "IT" "HR" "Accounting" and "Marketing". Don''t let individual indicators
+    fall too low.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43c5a78d75e274848a83721f0ecede05, type: 2}
   m_sharedMaterial: {fileID: -1008326204684946067, guid: 43c5a78d75e274848a83721f0ecede05,
@@ -10759,6 +10759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f73bf79fa35148a4ea9c94401d7aba5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   canvas: {fileID: 1764240323}
   RightChoice: {fileID: 636999407}
   LeftChoice: {fileID: 1344089687}
@@ -11056,7 +11057,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: CCTV windows allow you to see what is happening in the departments concerned.
-    This way you know how employees react to your decisions
+    This way you know how employees react to your decisions.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43c5a78d75e274848a83721f0ecede05, type: 2}
   m_sharedMaterial: {fileID: -1008326204684946067, guid: 43c5a78d75e274848a83721f0ecede05,
