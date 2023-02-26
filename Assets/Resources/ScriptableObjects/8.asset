@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: 8
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: a3cc0eda699c26a498042db2d26fc18f, type: 3}
-  description: Good morning, the previous night our group managed to carry out an
-    attack on your company, we stole the data of all employees. $50,000 seems to
-    us an appropriate fee to make us forget about the case
+  description: We have stolen the data of all employees. $50,000 seems to us to be
+    an appropriate fee to make you forget about the case.
   leftChoice: we won't be intimidated
   rightChoice: Deal
   leftStats: f6fffffff6fffffff6fffffff6ffffff00000000

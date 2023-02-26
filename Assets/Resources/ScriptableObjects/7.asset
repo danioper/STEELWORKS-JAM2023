@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 0}
-  description: 'You receive a message in the morning: "Good morning. I like your
-    company very much and would like to invest a lot of money in it. In return, I
-    hope that my cousin will stay employed with you in your company."'
+  cardSprite: {fileID: 21300000, guid: 7f35b273897edd3489628445b53856c9, type: 3}
+  description: Would like to invest a lot of money in it. In return, I hope that
+    my cousin will stay employed with you in your company."
   leftChoice: I am not bribed.
   rightChoice: I like this offer.
   leftStats: 000000000000000000000000fbffffff00000000

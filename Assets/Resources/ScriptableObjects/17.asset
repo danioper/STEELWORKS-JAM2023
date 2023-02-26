@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 17
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
-  description: Your review of finances is interrupted by Eve Batty along with Coil
-    Optekar. They are arguing about an issue you completely don't understand from
-    either side.
-  leftChoice: Show Eve
-  rightChoice: Show Coil
+  description: Your review of the financials is interrupted by a member of the Accouting
+    department along with HR. They are arguing about an issue you completely don't
+    understand from either side.
+  leftChoice: Show Accouting
+  rightChoice: Show HR
   leftStats: 0000000000000000ecffffff0000000000000000
   rightStats: 00000000ecffffff000000000000000000000000
   leftComments:
