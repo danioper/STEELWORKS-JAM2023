@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 28
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: 7b3f4687ec12a8c4089af28060fcc976, type: 3}
-  description: Chip Jennings has come to you with a plan for a new product engine,
-    but before he gets started he wants to gather feedback from the community.
+  description: '"IT" has come to you with a plan for a new product engine, but before
+    he gets started he wants to gather feedback from the community.'
   leftChoice: Let's keep it a secret
   rightChoice: Right
   leftStats: 0000000000000000000000000500000000000000

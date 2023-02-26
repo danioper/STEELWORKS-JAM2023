@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 26
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
-  description: 'Mike Socket texted you: "At the accounting office we put too much
-    paper in the printer. Unfortunately it was damaged and needs to be replaced.'
+  cardSprite: {fileID: 21300000, guid: 7e3da80d004108a418f32954c0995996, type: 3}
+  description: At the accounting office we put too much paper in the printer. Unfortunately
+    it was damaged and needs to be replaced.
   leftChoice: You messed up, fix it
   rightChoice: Right
   leftStats: 0000000000000000f6ffffff0000000000000000
