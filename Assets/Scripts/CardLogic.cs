@@ -25,6 +25,11 @@ public class CardLogic : MonoBehaviour
     public Slider AccSlider;
     public Slider MarkSlider;
 
+    public SpriteRenderer ITComment;
+    public SpriteRenderer HRComment;
+    public SpriteRenderer AccComment;
+    public SpriteRenderer MarkComment;
+
     public SpriteRenderer StressSprite;
     public SpriteRenderer CashSprite;
 
@@ -223,12 +228,6 @@ public class CardLogic : MonoBehaviour
             Stats[i] = 50;
         }
         UpdateStatsDisplay(Stats);
-        
-        //Debug.Log("Stress:" + Stress);
-        //Sprite newSprite;
-        //newSprite = Resources.Load("StressSprites/pasek_20_stres") as Sprite;
-        //Debug.Log(newSprite.name);
-        //StressSprite.sprite = newSprite;
     }
 
     public void Update()
