@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ad329f58ba3e44855fa62bacf5df3, type: 3}
   m_Name: HR_low
   m_EditorClassIdentifier: 
-  Description: 
+  Description: With no HR staff, employees from other departments got lazy and did
+    not finish the product on time.  The blame for this was placed on you and you
+    were also fired fairly quickly.

@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194ad329f58ba3e44855fa62bacf5df3, type: 3}
   m_Name: IT_low
   m_EditorClassIdentifier: 
-  Description: 
+  Description: Due to the lack of IT staff, the company's security was breached and
+    all the funds it had were stolen.  They can't help it, you've been removed as
+    a manager without any resources.
