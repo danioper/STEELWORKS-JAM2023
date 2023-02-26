@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -14,6 +15,8 @@ public class CardLogic : MonoBehaviour
     public GameObject LeftChoice;
     public int CardsCount;
     public int Stress;
+    public float Timer;
+    public float TimeShow = 3f;
 
     public Image ImageSlot;
     public TextMeshProUGUI DescSlot;
@@ -25,10 +28,7 @@ public class CardLogic : MonoBehaviour
     public Slider AccSlider;
     public Slider MarkSlider;
 
-    public SpriteRenderer ITComment;
-    public SpriteRenderer HRComment;
-    public SpriteRenderer AccComment;
-    public SpriteRenderer MarkComment;
+    public GameObject[] Coms = new GameObject[4];
 
     public SpriteRenderer StressSprite;
     public SpriteRenderer CashSprite;
@@ -107,6 +107,29 @@ public class CardLogic : MonoBehaviour
            Stats[i] += CardValues.leftStats[i];
             // Debug.Log("Stats" + i + " " + Stats[i]);
         }
+
+        int commentsNumber = CardValues.leftComments.Length;
+
+        for(int i = 0; i < commentsNumber; i++)
+        {
+            if (CardValues.leftComments[i] != "")
+            {
+                Transform textSlot = Coms[i].transform.GetChild(0);
+                TextMeshPro txt = textSlot.GetComponent<TextMeshPro>();
+                txt.text = CardValues.leftComments[i];
+                Coms[i].SetActive(true);
+
+                if(Timer <= TimeShow)
+                {
+                    Timer += Time.deltaTime;
+                } else
+                {
+                    Coms[i].SetActive(false);
+                    Timer = 0f;
+                }
+            }
+        }
+
         return Stats;
     }
 
@@ -115,6 +138,30 @@ public class CardLogic : MonoBehaviour
         for (int i = 0; i < Stats.Length; i++)
         {
             Stats[i] += CardValues.rightStats[i];
+        }
+
+        int commentsNumber = CardValues.rightComments.Length;
+
+        for (int i = 0; i < commentsNumber; i++)
+        {
+            if (CardValues.rightComments[i] != "")
+            {
+                Transform textSlot = Coms[i].transform.GetChild(0);
+                TextMeshPro txt = textSlot.GetComponent<TextMeshPro>();
+                txt.text = CardValues.rightComments[i];
+                Coms[i].SetActive(true);
+
+                if (Timer <= TimeShow)
+                {
+                    Timer += Time.deltaTime;
+                }
+                else
+                {
+                    Coms[i].SetActive(false);
+                    Timer = 0f;
+                }
+
+            }
         }
         return Stats;
     }

@@ -411,6 +411,8 @@ MonoBehaviour:
   LeftChoice: {fileID: 1560056751694443981}
   CardsCount: 21
   Stress: 0
+  Timer: 0
+  TimeShow: 3
   ImageSlot: {fileID: 7325793690300005380}
   DescSlot: {fileID: 7325793690719554431}
   LeftChoiceSlot: {fileID: 8570152338933087410}
@@ -419,10 +421,11 @@ MonoBehaviour:
   HRSlider: {fileID: 1646954268}
   AccSlider: {fileID: 1351579455}
   MarkSlider: {fileID: 758868769}
-  ITComment: {fileID: 1634913477}
-  HRComment: {fileID: 1061374921}
-  AccComment: {fileID: 1053629154}
-  MarkComment: {fileID: 452146065}
+  Coms:
+  - {fileID: 1634913475}
+  - {fileID: 1061374919}
+  - {fileID: 1053629152}
+  - {fileID: 452146063}
   StressSprite: {fileID: 821338103}
   CashSprite: {fileID: 1158576278}
   Stats: 0000000000000000000000000000000000000000
@@ -604,7 +607,7 @@ GameObject:
   - component: {fileID: 452146064}
   - component: {fileID: 452146065}
   m_Layer: 0
-  m_Name: MarkComBG
+  m_Name: ComBG3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1305,7 +1308,7 @@ GameObject:
   - component: {fileID: 1018128536}
   m_Layer: 0
   m_Name: HRComment
-  m_TagString: Untagged
+  m_TagString: CommentText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1506,7 +1509,7 @@ GameObject:
   - component: {fileID: 1053629153}
   - component: {fileID: 1053629154}
   m_Layer: 0
-  m_Name: AccComBG
+  m_Name: ComBG2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1628,7 +1631,7 @@ GameObject:
   - component: {fileID: 1061374920}
   - component: {fileID: 1061374921}
   m_Layer: 0
-  m_Name: HRComBG
+  m_Name: ComBG1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2306,7 +2309,7 @@ GameObject:
   - component: {fileID: 1392820373}
   m_Layer: 0
   m_Name: ITComment
-  m_TagString: Untagged
+  m_TagString: CommentText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2517,7 +2520,7 @@ GameObject:
   - component: {fileID: 1473736589}
   m_Layer: 0
   m_Name: AccComment
-  m_TagString: Untagged
+  m_TagString: CommentText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2726,7 +2729,7 @@ GameObject:
   - component: {fileID: 1634913476}
   - component: {fileID: 1634913477}
   m_Layer: 0
-  m_Name: ITComBG
+  m_Name: ComBG0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3123,7 +3126,7 @@ GameObject:
   - component: {fileID: 1817036220}
   m_Layer: 0
   m_Name: MarkComment
-  m_TagString: Untagged
+  m_TagString: CommentText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3883,8 +3886,8 @@ MonoBehaviour:
   - {fileID: 3516815169859459462}
   - {fileID: 3516815169481194496}
   m_Bounds:
-    m_Center: {x: -0.028831214, y: -0.025696218, z: 0}
-    m_Extent: {x: 0.38116893, y: 0.8448379, z: 0}
+    m_Center: {x: -0.028830945, y: -0.025696874, z: 0}
+    m_Extent: {x: 0.38116962, y: 0.8448382, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -4175,8 +4178,8 @@ MonoBehaviour:
   - {fileID: 3516815169520237787}
   - {fileID: 3516815170994365039}
   m_Bounds:
-    m_Center: {x: -0.028830022, y: -0.025696337, z: 0}
-    m_Extent: {x: 0.38116917, y: 0.8448378, z: 0}
+    m_Center: {x: -0.028830469, y: -0.02569735, z: 0}
+    m_Extent: {x: 0.38116962, y: 0.8448382, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -4474,8 +4477,8 @@ MonoBehaviour:
   - {fileID: 3516815169476579308}
   - {fileID: 3516815169648971920}
   m_Bounds:
-    m_Center: {x: -0.028830737, y: -0.025696456, z: 0}
-    m_Extent: {x: 0.3811694, y: 0.84483814, z: 0}
+    m_Center: {x: -0.028830707, y: -0.025696456, z: 0}
+    m_Extent: {x: 0.38116938, y: 0.844838, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -4569,8 +4572,8 @@ MonoBehaviour:
   - {fileID: 3516815170366206329}
   - {fileID: 3516815171035492301}
   m_Bounds:
-    m_Center: {x: -0.028830498, y: -0.025696218, z: 0}
-    m_Extent: {x: 0.38116917, y: 0.84483814, z: 0}
+    m_Center: {x: -0.028830469, y: -0.025696397, z: 0}
+    m_Extent: {x: 0.38116962, y: 0.84483796, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -5226,8 +5229,8 @@ MonoBehaviour:
   - {fileID: 3516815170914951756}
   - {fileID: 3516815170761243952}
   m_Bounds:
-    m_Center: {x: -0.028830498, y: -0.025696456, z: 0}
-    m_Extent: {x: 0.38116965, y: 0.844838, z: 0}
+    m_Center: {x: -0.028830945, y: -0.025696516, z: 0}
+    m_Extent: {x: 0.3811701, y: 0.8448381, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -5667,8 +5670,8 @@ MonoBehaviour:
   - {fileID: 3516815170500424742}
   - {fileID: 3516815170929021344}
   m_Bounds:
-    m_Center: {x: -0.028830975, y: -0.025696456, z: 0}
-    m_Extent: {x: 0.38116965, y: 0.84483814, z: 0}
+    m_Center: {x: -0.028830469, y: -0.025696516, z: 0}
+    m_Extent: {x: 0.38116962, y: 0.8448381, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -6191,8 +6194,8 @@ MonoBehaviour:
   - {fileID: 3516815171533502852}
   - {fileID: 3516815171105938434}
   m_Bounds:
-    m_Center: {x: -0.028830022, y: -0.025696456, z: 0}
-    m_Extent: {x: 0.38116965, y: 0.84483814, z: 0}
+    m_Center: {x: -0.028830469, y: -0.025696516, z: 0}
+    m_Extent: {x: 0.38116962, y: 0.8448381, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -6712,8 +6715,8 @@ MonoBehaviour:
   - {fileID: 3516815171067419865}
   - {fileID: 3516815170393997933}
   m_Bounds:
-    m_Center: {x: -0.028830975, y: -0.025696218, z: 0}
-    m_Extent: {x: 0.38116917, y: 0.84483814, z: 0}
+    m_Center: {x: -0.028830469, y: -0.025696397, z: 0}
+    m_Extent: {x: 0.38116962, y: 0.84483796, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -6841,8 +6844,8 @@ MonoBehaviour:
   - {fileID: 3516815171106615278}
   - {fileID: 3516815171206590610}
   m_Bounds:
-    m_Center: {x: 0.08152667, y: 0.063935876, z: 0}
-    m_Extent: {x: 0.4178239, y: 0.86835897, z: 0}
+    m_Center: {x: 0.08152714, y: 0.063935876, z: 0}
+    m_Extent: {x: 0.41782343, y: 0.86835897, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
