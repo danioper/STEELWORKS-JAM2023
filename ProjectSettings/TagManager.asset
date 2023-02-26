@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LevelLoader
   - Menu
+  - CommentText
   layers:
   - Default
   - TransparentFX
