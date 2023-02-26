@@ -37,8 +37,10 @@ public class CardLogic : MonoBehaviour
     public SpriteRenderer StressSprite;
     public SpriteRenderer CashSprite;
 
+    public SceneChanger sceneChanger;
+
     // Between 0 and 100
-    public int[] Stats = new int[5] { 50, 50, 50, 50, 20 };
+    public int[] Stats = new int[5];
 
     private Vector2 pos;
     private List<int> availableNums = new List<int>();
@@ -302,6 +304,9 @@ public class CardLogic : MonoBehaviour
     {
         // Debug.Log(ImageSlot.name);
         // Debug.Log("Start");
+
+        sceneChanger = GameObject.FindGameObjectWithTag("LevelLoader").GetComponent<SceneChanger>();
+
         for (int i = 0; i < CardsCount; i++)
         {
             availableNums.Add(i);
@@ -315,10 +320,11 @@ public class CardLogic : MonoBehaviour
         //}
 
         LoadCardData(GetCardData());
-        for (int i = 0; i < Stats.Length; i++)
+        for (int i = 0; i < 4; i++)
         {
             Stats[i] = 50;
         }
+        Stats[4] = 60;
         UpdateStatsDisplay(Stats);
     }
 
@@ -345,5 +351,12 @@ public class CardLogic : MonoBehaviour
     {
         string end_name;
 
+        if(Stress >= 100)
+        {
+            end_name = endings[2];
+        }
+
+        // if (Stats[])
+        // sceneChanger.LoadNextLevel();
     }
 }
