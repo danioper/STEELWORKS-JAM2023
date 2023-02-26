@@ -161,7 +161,7 @@ public class CardLogic : MonoBehaviour
             {
                 Stress += 20;
                 isStressUpdated = true;
-                Debug.Log("Stress updated: " + Stress);
+                // Debug.Log("Stress updated: " + Stress);
             }
         }
         return Stress;
