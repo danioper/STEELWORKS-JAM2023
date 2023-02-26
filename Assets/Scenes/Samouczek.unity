@@ -2260,7 +2260,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Placeholder Right
+  m_text: End the tutorial
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43c5a78d75e274848a83721f0ecede05, type: 2}
   m_sharedMaterial: {fileID: -1008326204684946067, guid: 43c5a78d75e274848a83721f0ecede05,
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Swipe character card to end tutorial
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43c5a78d75e274848a83721f0ecede05, type: 2}
   m_sharedMaterial: {fileID: -1008326204684946067, guid: 43c5a78d75e274848a83721f0ecede05,
@@ -4118,7 +4118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4191,14 +4191,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822527513}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 1.1039262, y: -4.075864, z: 0}
   m_LocalScale: {x: 73.838776, y: 73.8388, z: 73.8388}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 155045241}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &822527515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8203,7 +8203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Placeholder Left
+  m_text: End the tutorial
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43c5a78d75e274848a83721f0ecede05, type: 2}
   m_sharedMaterial: {fileID: -1008326204684946067, guid: 43c5a78d75e274848a83721f0ecede05,
@@ -10786,6 +10786,7 @@ MonoBehaviour:
   - {fileID: 0}
   StressSprite: {fileID: 867542883}
   CashSprite: {fileID: 2111968104}
+  sceneChanger: {fileID: 0}
   Stats: 0000000000000000000000000000000000000000
 --- !u!114 &1931703955
 MonoBehaviour:
