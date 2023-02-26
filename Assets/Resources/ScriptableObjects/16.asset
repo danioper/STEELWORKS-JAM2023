@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11374f9b2d3f69147ae050071df34998, type: 3}
   m_Name: 16
   m_EditorClassIdentifier: 
-  cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
+  cardSprite: {fileID: 21300000, guid: 7e3da80d004108a418f32954c0995996, type: 3}
   description: We have a big shortfall in the budget. I have an idea of what we can
     do, but it won't be entirely legal, for if we succeed, we'll get a large stockpile
     of cash.
