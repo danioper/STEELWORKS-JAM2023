@@ -17,7 +17,7 @@ MonoBehaviour:
     game there! Let's turn off their electricity and teach them how to work!
   leftChoice: Turn off the electricity
   rightChoice: 'I don''t care '
-  leftStats: ecffffff14000000000000000000000000000000
+  leftStats: ecffffff1400000000000000000000000000000001000000
   rightStats: 14000000ecffffff000000000000000000000000
   leftComments:
   - Where is light?!

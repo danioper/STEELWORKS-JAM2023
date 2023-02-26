@@ -650,7 +650,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 8744067202409697820, guid: 1e4f7f95b116a254eb07ef2b7974f946,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 023e2451c23ff1e47af045b70d6f7002, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -6907,8 +6907,8 @@ MonoBehaviour:
   - {fileID: 3516815171067419865}
   - {fileID: 3516815170393997933}
   m_Bounds:
-    m_Center: {x: -0.028829515, y: -0.02569598, z: 0}
-    m_Extent: {x: 0.38116962, y: 0.8448379, z: 0}
+    m_Center: {x: -0.028830975, y: -0.025696218, z: 0}
+    m_Extent: {x: 0.38116917, y: 0.84483814, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -7036,8 +7036,8 @@ MonoBehaviour:
   - {fileID: 3516815171106615278}
   - {fileID: 3516815171206590610}
   m_Bounds:
-    m_Center: {x: 0.081527084, y: 0.06393564, z: 0}
-    m_Extent: {x: 0.4178233, y: 0.86835885, z: 0}
+    m_Center: {x: 0.08152667, y: 0.063935876, z: 0}
+    m_Extent: {x: 0.4178239, y: 0.86835897, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
