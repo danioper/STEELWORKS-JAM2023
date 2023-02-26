@@ -47,21 +47,7 @@ public class CardLogic : MonoBehaviour
     private List<int> availableNums = new List<int>();
 
     private int cardNumber;
-
-    private string[] endings = new string[11]
-    {
-        "victory",
-        "stress",
-        "no_cash",
-        "IT_high",
-        "IT_low",
-        "HR_high",
-        "HR_low",
-        "acc_high",
-        "acc_low",
-        "mark_high",
-        "mark_low"
-    };
+    private int countToVictory = 0;
 
     public void OnMouseDrag(BaseEventData data)
     {
@@ -87,6 +73,8 @@ public class CardLogic : MonoBehaviour
             SOCardValues OldCardData = GetCardData();
             cardNumber = GetCardNumber();
             SOCardValues CardData = GetCardData();
+            countToVictory++;
+
 
             if (pos.x < -500f)
             {
@@ -106,9 +94,14 @@ public class CardLogic : MonoBehaviour
 
     public int GetCardNumber()
     {
-        var rand = new System.Random();
-        int cardNumber = rand.Next(availableNums.Count);
-        availableNums.Remove(cardNumber);
+        int count = availableNums.Count;
+        System.Random rnd = new System.Random();
+        int cardNumber = rnd.Next(1, count);
+        //while (cardNumber == 0)
+        //{
+        //    cardNumber = rnd.Next(1, count);
+        //}
+            availableNums.Remove(cardNumber);
         return cardNumber;
     }
 
@@ -408,6 +401,12 @@ public class CardLogic : MonoBehaviour
         if (Stats[3] <= 0)
         {
             gameManager.ending = "mark_low";
+            sceneChanger.LoadNextLevel();
+        }
+
+        if(countToVictory >= 20)
+        {
+            gameManager.ending = "victory";
             sceneChanger.LoadNextLevel();
         }
         Debug.Log("Ending: " + gameManager.ending);
