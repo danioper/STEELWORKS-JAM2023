@@ -51,6 +51,9 @@ public class Dialogue : MonoBehaviour
                 case 9:
                     spriteRenderer.sprite = Resources.Load<Sprite>($"Narrative/{4}");
                 break;
+                case 12:
+                    spriteRenderer.sprite = Resources.Load<Sprite>($"Narrative/{5}");
+                    break;
                 default:
                 break;
             }
