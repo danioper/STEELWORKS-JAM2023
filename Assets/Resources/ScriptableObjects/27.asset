@@ -15,8 +15,8 @@ MonoBehaviour:
   cardSprite: {fileID: 21300000, guid: 7b3f4687ec12a8c4089af28060fcc976, type: 3}
   description: '"IT" notified you that it found information on the web that a competitor
     has a great prototype of a new product. They have the means can get its plans.'
-  leftChoice: No way
-  rightChoice: Sure, get to work
+  leftChoice: No way.
+  rightChoice: Sure, get to work.
   leftStats: 0000000000000000000000000500000000000000
   rightStats: 0a000000000000000000000000000000f6ffffff
   leftComments:

@@ -15,8 +15,8 @@ MonoBehaviour:
   cardSprite: {fileID: 21300000, guid: 7b3f4687ec12a8c4089af28060fcc976, type: 3}
   description: '"IT" has come to you with a plan for a new product engine, but before
     he gets started he wants to gather feedback from the community.'
-  leftChoice: Let's keep it a secret
-  rightChoice: Right
+  leftChoice: Let's keep it a secret.
+  rightChoice: Right.
   leftStats: 0000000000000000000000000500000000000000
   rightStats: 0a0000000000000000000000fbffffff00000000
   leftComments:

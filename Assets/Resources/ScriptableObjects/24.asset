@@ -15,9 +15,9 @@ MonoBehaviour:
   cardSprite: {fileID: 21300000, guid: 3aa71002e6786e94bb92d190b71cabce, type: 3}
   description: 'Larry Robertson came into the office, threw on a stack of documents
     saying: "We had very large expenses this quarter, unfortunately we have to cut
-    the budget for Marketing or IT to avoid going into debt."'
-  leftChoice: Cut Marketing
-  rightChoice: Cut IT
+    the budget for Marketing or IT to avoid going into debt.'
+  leftChoice: Cut Marketing.
+  rightChoice: Cut IT.
   leftStats: 000000000000000000000000f6ffffff00000000
   rightStats: f6ffffff00000000000000000000000000000000
   leftComments:

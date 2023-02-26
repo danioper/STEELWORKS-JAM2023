@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: bee234efa89f97e49adef0d07204e7bc, type: 3}
   description: HR Dept. Pisses me off.
-  leftChoice: Me too
-  rightChoice: Deal with it
-  leftStats: 0a0000000a0000000a0000001400000014000000
-  rightStats: f6fffffff6fffffff6ffffffecffffffecffffff
+  leftChoice: Me too.
+  rightChoice: Deal with it.
+  leftStats: 0000000000000000000000000000000000000000
+  rightStats: 0000000000000000000000000000000000000000
   leftComments:
   - Yeah!
   - Yeah!

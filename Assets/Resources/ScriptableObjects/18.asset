@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: f7d8b0126858a614e8414e07668a8bf9, type: 3}
   description: Dear Leader, the problem has been diagnosed, our spy attack on UniSoft
-    has been discovered and the information has been released to the media
-  leftChoice: Let's keep it quiet
-  rightChoice: Hush up the media
+    has been discovered and the information has been released to the media.
+  leftChoice: Let's keep it quiet.
+  rightChoice: Hush up the media.
   leftStats: 000000000000000000000000e2ffffff00000000
   rightStats: 0000000000000000000000000a000000e2ffffff
   leftComments:

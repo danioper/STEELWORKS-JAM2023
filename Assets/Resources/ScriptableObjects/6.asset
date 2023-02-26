@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: ff67b96c6bd4aae49b1144fc942dbb04, type: 3}
-  description: We need to provide workers from the destroyed factory with compensation
+  description: We need to provide workers from the destroyed factory. with compensation
     and a place to sleep so that people will continue to think well of us.
   leftChoice: We can't do anything.
-  rightChoice: We need to help them
+  rightChoice: We need to help them.
   leftStats: 0000000000000000000000000a000000f6ffffff
   rightStats: 000000000000000000000000f6ffffff00000000
   leftComments:

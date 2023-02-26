@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: 7e3da80d004108a418f32954c0995996, type: 3}
   description: Mr. Leader, our new IT trainee has damaged a drive in the server room
-    please replace this drive
-  leftChoice: We don't have budget
-  rightChoice: No problem
+    please replace this drive.
+  leftChoice: We don't have budget.
+  rightChoice: No problem.
   leftStats: f6fffffff6ffffff000000000000000000000000
   rightStats: 000000000a0000000000000000000000f6ffffff
   leftComments:

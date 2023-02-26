@@ -15,8 +15,8 @@ MonoBehaviour:
   cardSprite: {fileID: 21300000, guid: 7e3da80d004108a418f32954c0995996, type: 3}
   description: At the accounting office we put too much paper in the printer. Unfortunately
     it was damaged and needs to be replaced.
-  leftChoice: You messed up, fix it
-  rightChoice: Right
+  leftChoice: You messed up, fix it.
+  rightChoice: Right.
   leftStats: 0000000000000000f6ffffff0000000000000000
   rightStats: 00000000000000000a00000000000000fbffffff
   leftComments:

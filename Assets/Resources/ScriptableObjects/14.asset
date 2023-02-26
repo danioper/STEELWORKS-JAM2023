@@ -15,8 +15,8 @@ MonoBehaviour:
   cardSprite: {fileID: 21300000, guid: 771a8bdd15a66ef43a02fb2f0583905b, type: 3}
   description: The IT department is not efficient! They seem to be doing some platform
     game there! Let's turn off their electricity and teach them how to work!
-  leftChoice: Turn off the electricity
-  rightChoice: 'I don''t care '
+  leftChoice: Turn off the electricity.
+  rightChoice: I don't care.
   leftStats: ecffffff14000000000000000000000000000000
   rightStats: 14000000ecffffff000000000000000000000000
   leftComments:

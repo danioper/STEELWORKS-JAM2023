@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardSprite: {fileID: 21300000, guid: f7d8b0126858a614e8414e07668a8bf9, type: 3}
   description: Hey chief, the accounting department dealt with the settlement of
-    accounts much faster than usual, we could use some increase
+    accounts much faster than usual, we could use some increase.
   leftChoice: There is no option for an increase
   rightChoice: Well, sure !
   leftStats: 0000000000000000f6ffffff0000000000000000

@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Mr. Chairman! I have finished your task, your car has been cleaned.
     Can I take a rest?
   leftChoice: As the President said.
-  rightChoice: Immediately based on the second
+  rightChoice: Immediately based on the second.
   leftStats: 000000000000000000000000f6ffffff00000000
   rightStats: 0000000000000000000000000a000000f6ffffff
   leftComments:

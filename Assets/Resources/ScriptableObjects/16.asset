@@ -16,8 +16,8 @@ MonoBehaviour:
   description: We have a big shortfall in the budget. I have an idea of what we can
     do, but it won't be entirely legal, for if we succeed, we'll get a large stockpile
     of cash.
-  leftChoice: Let's try
-  rightChoice: We don't want to do anything illegal
+  leftChoice: Let's try.
+  rightChoice: We don't want to do anything illegal.
   leftStats: 00000000000000000a000000ecffffff28000000
   rightStats: 0000000000000000f6ffffff0000000000000000
   leftComments:

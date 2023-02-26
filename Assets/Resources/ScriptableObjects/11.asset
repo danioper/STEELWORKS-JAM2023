@@ -16,8 +16,8 @@ MonoBehaviour:
   description: Chairman I have good news and bad news. The good news is that we can
     hire a new person, and the bad news is that she is the daughter of one of the
     bosses above, and if we don't do it they will cut our budget.
-  leftChoice: 'Let them cut, there is no nepotism here:'
-  rightChoice: 'Since they order:'
+  leftChoice: Let them cut, there is no nepotism here.
+  rightChoice: Since they order.
   leftStats: f6ffffff000000000000000000000000f6ffffff
   rightStats: f6ffffff00000000000000000000000000000000
   leftComments:

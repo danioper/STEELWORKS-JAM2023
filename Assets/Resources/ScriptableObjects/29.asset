@@ -15,8 +15,8 @@ MonoBehaviour:
   cardSprite: {fileID: 21300000, guid: 7b3f4687ec12a8c4089af28060fcc976, type: 3}
   description: '"IT" has found a defect in your equipment, but needs the help of
     an accountant to calculate it properly.'
-  leftChoice: Counsel yourself
-  rightChoice: Get help
+  leftChoice: Counsel yourself.
+  rightChoice: Get help.
   leftStats: 00000000000000000000000000000000f1ffffff
   rightStats: 0f00000000000000fbffffff00000000fbffffff
   leftComments:

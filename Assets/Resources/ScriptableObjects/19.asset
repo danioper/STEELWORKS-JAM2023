@@ -16,8 +16,8 @@ MonoBehaviour:
   description: 'They want to come to work, at the door of your office met Mike Socket:
     "Boss, one person in the department has a birthday today, can we do a pizza order
     and invite guests?'
-  leftChoice: Nope
-  rightChoice: Right
+  leftChoice: Nope.
+  rightChoice: Right.
   leftStats: 0000000000000000f6ffffff0000000000000000
   rightStats: 0a000000f6ffffff0a0000000a000000f6ffffff
   leftComments:

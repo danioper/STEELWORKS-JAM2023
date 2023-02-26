@@ -15,8 +15,8 @@ MonoBehaviour:
   cardSprite: {fileID: 21300000, guid: 7b3f4687ec12a8c4089af28060fcc976, type: 3}
   description: Cheers to the boss! The factory flooded, we need to allocate funds
     to repair the machinery. Should I get going?
-  leftChoice: We can't afford it
-  rightChoice: We can't lose the factory
+  leftChoice: We can't afford it.
+  rightChoice: We can't lose the factory.
   leftStats: f6ffffff00000000000000000000000000000000
   rightStats: 0a000000000000000000000000000000f6ffffff
   leftComments:
